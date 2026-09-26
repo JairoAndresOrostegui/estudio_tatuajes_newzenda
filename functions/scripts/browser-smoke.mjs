@@ -21,8 +21,16 @@ await page.screenshot({
   fullPage: true,
 });
 const user = credentials.users.find((u) => u.role === "admin");
-await page.getByRole("textbox").nth(0).fill(user.email);
-await page.getByRole("textbox").nth(1).fill(user.password);
+await page
+  .getByRole("textbox", { name: "Correo electrónico", exact: true })
+  .click();
+await page
+  .getByRole("textbox", { name: "Correo electrónico", exact: true })
+  .pressSequentially(user.email, { delay: 10 });
+await page.getByRole("textbox", { name: "Contraseña", exact: true }).click();
+await page
+  .getByRole("textbox", { name: "Contraseña", exact: true })
+  .pressSequentially(user.password, { delay: 15 });
 await page
   .getByRole("button", { name: "Entrar al estudio", exact: true })
   .click();
@@ -57,6 +65,17 @@ for (const name of [
       .count()
   )
     failures.push(`Error loading ${name}`);
+}
+await page.getByText("Caja y reportes", { exact: true }).first().click();
+await page.waitForTimeout(1500);
+for (const [name, extension] of [
+  ["Excel", "xlsx"],
+  ["PDF", "pdf"],
+]) {
+  const waiting = page.waitForEvent("download", { timeout: 30000 });
+  await page.getByRole("button", { name, exact: true }).click();
+  const download = await waiting;
+  await download.saveAs(`../artifacts/report-export.${extension}`);
 }
 await page.getByText("Vista general", { exact: true }).click();
 await page.setViewportSize({ width: 390, height: 844 });
