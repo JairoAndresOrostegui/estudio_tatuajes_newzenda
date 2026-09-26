@@ -306,6 +306,14 @@ export const findinkQuery = wrap(async (req) => {
     q = q.where("bedId", "==", id(p.bedId));
   }
   if (p.entityId) q = q.where("__name__", "==", id(p.entityId));
+  if (p.status) {
+    check(
+      collection === "deposits" &&
+        ["available", "applied", "refunded"].includes(p.status),
+      "Filtro de estado no disponible.",
+    );
+    q = q.where("status", "==", p.status);
+  }
   q = q.orderBy("__name__");
   if (p.cursor) q = q.startAfter(id(p.cursor));
   const limit = 50;

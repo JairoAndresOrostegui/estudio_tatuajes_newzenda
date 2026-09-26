@@ -743,6 +743,7 @@ class _AppShellState extends State<AppShell> {
               SizedBox(
                 width: 190,
                 child: TextFormField(
+                  key: ValueKey('agenda_$agendaDay'),
                   initialValue: agendaDay,
                   decoration: const InputDecoration(
                     labelText: 'Fecha AAAA-MM-DD',

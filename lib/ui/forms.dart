@@ -32,7 +32,14 @@ class Lookups {
         : role == 'auditor'
         ? ['artists', 'beds', 'catalog', 'settings']
         : ['artists', 'beds', 'catalog', 'settings', 'deposits'];
-    final result = await Future.wait(names.map(api.lookup));
+    final result = await Future.wait(
+      names.map(
+        (name) => api.lookup(
+          name,
+          filters: name == 'deposits' ? {'status': 'available'} : const {},
+        ),
+      ),
+    );
     for (var i = 0; i < names.length; i++) {
       switch (names[i]) {
         case 'artists':

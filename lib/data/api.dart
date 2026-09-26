@@ -27,11 +27,14 @@ class Api {
     'cursor': ?cursor,
     ...filters,
   });
-  Future<List<Json>> lookup(String collection) async {
+  Future<List<Json>> lookup(
+    String collection, {
+    Json filters = const {},
+  }) async {
     final rows = <Json>[];
     String? cursor;
     do {
-      final page = await query(collection, cursor: cursor);
+      final page = await query(collection, cursor: cursor, filters: filters);
       rows.addAll(asRows(page['rows']));
       cursor = page['nextCursor'] as String?;
       if (rows.length >= 2000 && cursor != null) {
