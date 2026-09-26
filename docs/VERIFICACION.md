@@ -13,6 +13,7 @@
 | Formulario real web | Venta de servicio + producto, artista, pago parcial y reverso enviados desde la interfaz |
 | Exportaciones reales | PDF de una página y XLSX descargados desde Chrome; importes contrastados con el reporte: bruto 375.000 y neto 44.000 COP |
 | Build web release | Correcto, servido por Firebase Hosting con HTTPS |
+| GitHub Actions | Ejecución [36234772092](https://github.com/JairoAndresOrostegui/estudio_tatuajes_newzenda/actions/runs/36234772092) aprobada para `f7bf7e1`: análisis, pruebas, compilaciones web/Android y publicación de artefactos |
 | Build Android release QA | Correcto; firmado con clave QA de depuración, no firma Play |
 | Descarga Android | HTTP 200, 58.571.894 bytes tras descompresión HTTP; SHA-256 idéntico al APK local |
 | Android emulado API 36 | APK instalado, inicio de sesión con correo/contraseña y carga del panel conectado a QA |
@@ -27,7 +28,7 @@ Las pruebas financieras dejan reversos auditables. Las cuentas temporales se
 desactivan al cerrar las pruebas. La demo identificada `qa_demo_*` queda operativa.
 
 SHA-256 del APK publicado:
-`063b835b224474baec92b029f69321187d1234f1adff076c8ea1b14604151c3c`.
+`11e7ef79ab7e4230ead451557c7f30bb7245cc0589d36f942510aa94be961803`.
 
 La descarga QA está en
 https://estudio-tatuajes-newzenda-qa.web.app/downloads/findink-qa.apk.
