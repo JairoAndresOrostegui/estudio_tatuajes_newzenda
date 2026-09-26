@@ -1,0 +1,18 @@
+name: iOS unsigned (manual, distribution deferred)
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.41.6'
+      - run: flutter pub get
+      - run: flutter build ios --release --no-codesign --dart-define-from-file=config/firebase.qa.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: findink-ios-unsigned
+          path: build/ios/iphoneos/Runner.app

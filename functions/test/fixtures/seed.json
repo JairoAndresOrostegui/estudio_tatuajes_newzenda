@@ -1,0 +1,12 @@
+[
+ {"action":"settings","payload":{"shifts":{"am":["08:00","13:00"],"pm":["13:00","18:00"],"night":["20:00","02:00"]},"methods":[{"id":"cash","name":"Efectivo"},{"id":"transfer","name":"Transferencia"},{"id":"card","name":"Tarjeta"}],"accounts":[{"id":"cashbox","name":"Caja QA"},{"id":"bank","name":"Banco de prueba"}],"categories":[{"id":"tattoo","name":"Tatuaje"},{"id":"piercing","name":"Piercing"},{"id":"retail","name":"Productos"},{"id":"supplies","name":"Insumos"},{"id":"rent","name":"Arriendo"},{"id":"other","name":"Otros"}]}},
+ {"action":"saveBed","payload":{"id":"bed_a","name":"Camilla A · QA","active":true}},
+ {"action":"saveBed","payload":{"id":"bed_b","name":"Camilla B · QA","active":true}},
+ {"action":"saveArtist","payload":{"id":"artist_ada","name":"Ada · artista ficticia","styles":"Línea fina, botánico","bedIds":["bed_a","bed_b"],"rule":{"baseBps":800,"reducedBps":600,"threshold":2000000,"effectiveFrom":"2026-01-01"}}},
+ {"action":"saveArtist","payload":{"id":"artist_leo","name":"Leo · artista ficticio","styles":"Tradicional, geométrico","bedIds":["bed_a","bed_b"],"rule":{"baseBps":3000,"reducedBps":3000,"threshold":2000000,"effectiveFrom":"2026-01-01"}}},
+ {"action":"saveCatalog","payload":{"id":"tattoo","name":"Tatuaje · precio de prueba","sku":"SRV-TAT","kind":"service","unit":"sesión","cost":0,"price":200000,"minimum":0,"categoryId":"tattoo"}},
+ {"action":"saveCatalog","payload":{"id":"retouch","name":"Retoque · precio de prueba","sku":"SRV-RET","kind":"service","unit":"sesión","cost":0,"price":60000,"minimum":0,"categoryId":"tattoo"}},
+ {"action":"saveCatalog","payload":{"id":"piercing","name":"Piercing · precio de prueba","sku":"SRV-PIE","kind":"service","unit":"sesión","cost":0,"price":80000,"minimum":0,"categoryId":"piercing"}},
+ {"action":"saveCatalog","payload":{"id":"cream","name":"Crema de cuidado · QA","sku":"PRD-001","kind":"product","unit":"unidad","cost":12000,"price":25000,"minimum":5,"initialStock":30,"supplier":"Proveedor ficticio","categoryId":"retail"}},
+ {"action":"saveCatalog","payload":{"id":"needle","name":"Cartucho estéril · QA","sku":"MAT-001","kind":"material","unit":"unidad","cost":3500,"price":0,"minimum":10,"initialStock":40,"supplier":"Proveedor ficticio","categoryId":"supplies"}}
+]

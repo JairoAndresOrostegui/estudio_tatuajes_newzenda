@@ -1,0 +1,15 @@
+{
+  "projectId": "estudio-tatuajes-newzenda",
+  "apiKey": "AIzaSyAG2-f2xDDtMFZqQKGM8dEFlmFfPBvqzBc",
+  "appId": "1:758196994345:web:f20dd3a83ae2f93ad13738",
+  "messagingSenderId": "758196994345",
+  "authDomain": "estudio-tatuajes-newzenda.firebaseapp.com",
+  "storageBucket": "estudio-tatuajes-newzenda.firebasestorage.app",
+  "androidAppId": "1:758196994345:android:2b6e6c2596566782d13738",
+  "iosAppId": "1:758196994345:ios:f1f93948c50ad71cd13738",
+  "iosBundleId": "com.newzenda.findinkHouse",
+  "googleWebClientId": "758196994345-hp32h78fkm1vht2fs4e9ao6u16t597e3.apps.googleusercontent.com",
+  "iosClientId": "758196994345-i210f2esrfilruugt1gnqnfe16crm6u2.apps.googleusercontent.com",
+  "androidApiKey": "AIzaSyB7_KXSLs9EPH6AGuvgXhWCRGCOYeMIg4M",
+  "iosApiKey": "AIzaSyAA7UuL-PmCllghpdnoeyR4l2KYI8vsPVU"
+}

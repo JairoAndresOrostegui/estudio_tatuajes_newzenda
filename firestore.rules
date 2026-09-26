@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function member(study) { return get(/databases/$(database)/documents/studies/$(study)/members/$(request.auth.uid)).data; }
+    function active(study) { return request.auth != null && study == 'findink-house-qa' && member(study).active == true && member(study).studyId == study; }
+    match /studies/{study}/{collection}/{document} {
+      allow write: if false; // Every write goes through validated callable transactions.
+      allow read: if active(study) && (
+        member(study).role == 'admin' ||
+        (collection == 'members' && document == request.auth.uid) ||
+        (member(study).role == 'reception' && collection in ['settings','beds','artists','catalog','appointments','sales','payables','movements','ledger','accruals','settlements','artistBalances','deposits','daily','balances']) ||
+        (member(study).role == 'auditor' && collection in ['daily','balances']) ||
+        (member(study).role == 'artist' && collection in ['appointments','accruals','settlements','artistBalances'] && resource.data.artistId == member(study).artistId)
+      );
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

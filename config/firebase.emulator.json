@@ -1,0 +1,14 @@
+{
+  "apiKey": "demo-findink-api-key",
+  "projectId": "demo-findink",
+  "appId": "1:123456789:web:demo",
+  "androidAppId": "1:123456789:android:demo",
+  "iosAppId": "1:123456789:ios:demo",
+  "messagingSenderId": "123456789",
+  "authDomain": "demo-findink.firebaseapp.com",
+  "storageBucket": "demo-findink.appspot.com",
+  "iosBundleId": "com.newzenda.findinkHouse",
+  "googleWebClientId": "unused-in-emulator",
+  "androidApiKey": "demo-findink-api-key",
+  "iosApiKey": "demo-findink-api-key"
+}

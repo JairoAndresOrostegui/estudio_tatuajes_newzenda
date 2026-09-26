@@ -1,0 +1,37 @@
+name: Verify Findink
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: functions/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.41.6'
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - run: npm --prefix functions ci
+      - run: npm --prefix functions test
+      - run: npm install -g firebase-tools@15.13.0
+      - run: firebase emulators:exec --only firestore --project demo-findink 'npm --prefix functions run test:rules'
+      - run: flutter build web --release --dart-define-from-file=config/firebase.qa.json
+      - run: flutter build apk --release --dart-define-from-file=config/firebase.qa.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: findink-qa-builds
+          path: |
+            build/web
+            build/app/outputs/flutter-apk/app-release.apk

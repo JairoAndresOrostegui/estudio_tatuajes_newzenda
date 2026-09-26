@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "758196994345",
+    "project_id": "estudio-tatuajes-newzenda",
+    "storage_bucket": "estudio-tatuajes-newzenda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758196994345:android:2b6e6c2596566782d13738",
+        "android_client_info": {
+          "package_name": "com.newzenda.findink_house"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758196994345-t8d9f3phcqqdihici6fg0n2sib1c34pt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newzenda.findink_house",
+            "certificate_hash": "a187c24b66ac65722d8005e81acac337f96af1df"
+          }
+        },
+        {
+          "client_id": "758196994345-hp32h78fkm1vht2fs4e9ao6u16t597e3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7_KXSLs9EPH6AGuvgXhWCRGCOYeMIg4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758196994345-hp32h78fkm1vht2fs4e9ao6u16t597e3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "758196994345-i210f2esrfilruugt1gnqnfe16crm6u2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.newzenda.findinkHouse"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

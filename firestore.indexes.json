@@ -1,0 +1,13 @@
+{"indexes":[
+ {"collectionGroup":"daily","queryScope":"COLLECTION","fields":[{"fieldPath":"dimension","order":"ASCENDING"},{"fieldPath":"day","order":"ASCENDING"}]},
+ {"collectionGroup":"appointments","queryScope":"COLLECTION","fields":[{"fieldPath":"artistId","order":"ASCENDING"},{"fieldPath":"day","order":"ASCENDING"}]},
+ {"collectionGroup":"appointments","queryScope":"COLLECTION","fields":[{"fieldPath":"bedId","order":"ASCENDING"},{"fieldPath":"day","order":"ASCENDING"}]},
+ {"collectionGroup":"appointments","queryScope":"COLLECTION","fields":[{"fieldPath":"artistId","order":"ASCENDING"},{"fieldPath":"bedId","order":"ASCENDING"},{"fieldPath":"day","order":"ASCENDING"}]}
+],"fieldOverrides":[
+ {"collectionGroup":"commands","fieldPath":"fingerprint","indexes":[]},
+ {"collectionGroup":"scheduleLocks","fieldPath":"slots","indexes":[]},
+ {"collectionGroup":"sales","fieldPath":"lines","indexes":[]},
+ {"collectionGroup":"sales","fieldPath":"payments","indexes":[]},
+ {"collectionGroup":"payables","fieldPath":"payments","indexes":[]},
+ {"collectionGroup":"audit","fieldPath":"fingerprint","indexes":[]}
+]}
