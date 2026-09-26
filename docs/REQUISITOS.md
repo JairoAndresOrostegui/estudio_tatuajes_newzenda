@@ -61,3 +61,11 @@ señala fórmulas en campos transaccionales en vez de confiar en cachés calcula
 3. Importación, exportación, documentación y pruebas con emuladores.
 4. Configurar Firebase QA, desplegar, probar flujo remoto, compilar web/Android;
    preparar proyecto iOS/CI y dejar constancia de validación real disponible.
+
+## Decisiones confirmadas durante la implementación
+
+El dueño autorizó expresamente `estudio-tatuajes-newzenda` para QA ficticio y
+designó su correo como administrador inicial. Se configuró la invitación sin
+publicar credenciales. También indicó que la distribución iOS se deja para
+después. Los pendientes de infraestructura anotados arriba describen el estado
+de la inspección inicial; el resultado actualizado está en VERIFICACION.md.

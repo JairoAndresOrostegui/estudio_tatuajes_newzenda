@@ -11,8 +11,10 @@
 | Humo Functions desplegadas | 8 controles aprobados con los cuatro roles y Auth correo/contraseña |
 | Navegador Chrome real | Acceso y recorrido de 9 módulos, escritorio y móvil, sin errores JS |
 | Formulario real web | Venta de servicio + producto, artista, pago parcial y reverso enviados desde la interfaz |
+| Exportaciones reales | PDF de una página y XLSX descargados desde Chrome; importes contrastados con el reporte: bruto 375.000 y neto 44.000 COP |
 | Build web release | Correcto, servido por Firebase Hosting con HTTPS |
 | Build Android release QA | Correcto; firmado con clave QA de depuración, no firma Play |
+| Descarga Android | HTTP 200, 58.571.894 bytes tras descompresión HTTP; SHA-256 idéntico al APK local |
 | Android emulado API 36 | APK instalado, inicio de sesión con correo/contraseña y carga del panel conectado a QA |
 | Seguridad de dependencias npm | 0 vulnerabilidades reportadas por auditoría de dependencias de ejecución |
 | Conciliación de demo | Bruto 375.000, estudio 86.000, neto 44.000, caja 215.000, CxC 100.000, CxP 55.000 COP |
@@ -23,6 +25,12 @@ Evidencia local (ignorada por git): `artifacts/qa-smoke-results.json`,
 capturas de login/panel web y Android, y logs de compilaciones/emuladores.
 Las pruebas financieras dejan reversos auditables. Las cuentas temporales se
 desactivan al cerrar las pruebas. La demo identificada `qa_demo_*` queda operativa.
+
+SHA-256 del APK publicado:
+`063b835b224474baec92b029f69321187d1234f1adff076c8ea1b14604151c3c`.
+
+La descarga QA está en
+https://estudio-tatuajes-newzenda-qa.web.app/downloads/findink-qa.apk.
 
 Se detectó y corrigió durante la prueba nativa una inicialización Firebase con
 API key web distinta de la aplicación Android. Cada plataforma usa su propia
