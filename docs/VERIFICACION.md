@@ -1,4 +1,4 @@
-# Verificación de entrega QA — 26 de septiembre de 2026
+# Verificación de entrega QA — 27 de septiembre de 2026
 
 ## Comprobado
 
@@ -13,9 +13,9 @@
 | Formulario real web | Venta de servicio + producto, artista, pago parcial y reverso enviados desde la interfaz |
 | Exportaciones reales | PDF de una página y XLSX descargados desde Chrome; importes contrastados con el reporte: bruto 375.000 y neto 44.000 COP |
 | Build web release | Correcto, servido por Firebase Hosting con HTTPS |
-| GitHub Actions | Ejecución [36234772092](https://github.com/JairoAndresOrostegui/estudio_tatuajes_newzenda/actions/runs/36234772092) aprobada para `f7bf7e1`: análisis, pruebas, compilaciones web/Android y publicación de artefactos |
+| GitHub Actions | Ejecución [36330780010](https://github.com/JairoAndresOrostegui/estudio_tatuajes_newzenda/actions/runs/36330780010) aprobada para `0cad016`: análisis, pruebas, compilaciones web/Android y publicación de artefactos |
 | Build Android release QA | Correcto; firmado con clave QA de depuración, no firma Play |
-| Descarga Android | HTTP 200, 58.571.894 bytes tras descompresión HTTP; SHA-256 idéntico al APK local |
+| Descarga Android | En la publicación del 27/09/2026: HTTP 200 y 60.788.866 bytes; SHA-256 remoto idéntico al APK local registrado abajo |
 | Android emulado API 36 | APK instalado, inicio de sesión con correo/contraseña y carga del panel conectado a QA |
 | Seguridad de dependencias npm | 0 vulnerabilidades reportadas por auditoría de dependencias de ejecución |
 | Conciliación de demo | Bruto 375.000, estudio 86.000, neto 44.000, caja 215.000, CxC 100.000, CxP 55.000 COP |
