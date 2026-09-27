@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:excel/excel.dart';
+import 'package:excel_community/excel_community.dart';
 import 'package:findink_house/domain/importer.dart';
 import 'package:findink_house/ui/login.dart';
 import 'package:findink_house/ui/theme.dart';

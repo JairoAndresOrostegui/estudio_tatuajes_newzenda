@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "758196994345-aukbtd85dg9bhhegogj2apm91ma4djp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newzenda.findink_house",
+            "certificate_hash": "d26b0bd43500b78bbe43e54a722a44a784b7725f"
+          }
+        },
+        {
           "client_id": "758196994345-t8d9f3phcqqdihici6fg0n2sib1c34pt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

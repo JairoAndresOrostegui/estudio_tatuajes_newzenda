@@ -14,7 +14,7 @@ público. Los accesos de prueba automatizada se deshabilitan tras verificarlos.
 
 ## Ejecutar
 
-Requisitos: Flutter 3.41.6 / Dart 3.11.4, Node 22, Firebase CLI y Java 21 para
+Requisitos: Flutter 3.47.5 / Dart 3.13.4, Node 22, Firebase CLI y Java 21 para
 emuladores. Android SDK 36 para APK; macOS/Xcode para iOS.
 
 ```powershell
@@ -81,6 +81,7 @@ no se afirma que iOS haya sido probado o publicado.
 - [Guía por rol y demostración](docs/GUIA.md)
 - [Operación, backups, costos y despliegue](docs/OPERACION.md)
 - [Verificaciones y límites de entrega](docs/VERIFICACION.md)
+- [Pruebas físicas y acta de decisión](docs/PRUEBAS_FISICAS.md)
 
 Pendientes de aceptación del dueño: tasas/horarios reales, interpretación de cobro
 por línea y regla vigente, equivalencias históricas y conciliación del Excel.

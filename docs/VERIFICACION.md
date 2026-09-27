@@ -27,7 +27,10 @@ capturas de login/panel web y Android, y logs de compilaciones/emuladores.
 Las pruebas financieras dejan reversos auditables. Las cuentas temporales se
 desactivan al cerrar las pruebas. La demo identificada `qa_demo_*` queda operativa.
 
-SHA-256 del APK publicado:
+SHA-256 del APK publicado el 27/09/2026 tras actualizar Flutter y la
+configuración Android de este PC:
+`6A3FA2D9245BA19211FAE64A5BBD91095C005CF83484E7D76660D0100DC0B3FC`.
+El hash anterior del 26/09/2026 era
 `11e7ef79ab7e4230ead451557c7f30bb7245cc0589d36f942510aa94be961803`.
 
 La descarga QA está en
